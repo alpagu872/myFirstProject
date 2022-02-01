@@ -1,18 +1,20 @@
 import React from 'react';
-import { SafeAreaView, View, Text, StyleSheet, Button } from 'react-native';
+import { SafeAreaView, View, Text, StyleSheet ,Button } from 'react-native';
 
 
 function App() {
 
-  
+
   return (
     <SafeAreaView style={styles.container}>
-      <View style={styles.box_1}/>
-      <View style={styles.box_2}/>
-      <View style= {styles.box_3 }/>
-      <View style = {styles.box_4} />
+      <View style={styles.card_container}>
 
-      
+        <View style={styles.card_body}>
+          <Text style = {styles.card_title}>Eddard Stark</Text>
+          <Text >Winter is coming...</Text>
+        </View>
+      </View>
+
     </SafeAreaView>
   )
 }
@@ -21,36 +23,27 @@ function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: 'row',
-    backgroundColor : 'yellow',
-    justifyContent: 'space-between',
-    alignItems: 'center',
+    backgroundColor: '#e0e0e0',
 
   },
 
-  box_1: {
-    width : 75,
-    height :75,
-    backgroundColor: 'red'
+  card_container: {
+    backgroundColor: 'white',
+    margin: 10,
+    borderWidth: 1,
+    borderColor: 'gray',
+    borderRadius: 5,
+  }
+  ,
+  card_body: {
+    padding: 10
 
   },
-  box_2: {
-    width : 75,
-    height :75,
-    backgroundColor: 'blue'
-    
-  },
-  box_3: {
-    width : 75,
-    height :75,
-    backgroundColor: 'green'
-    
-  },
-  box_4: {
-    width : 75,
-    height :75,
-    backgroundColor: 'orange'
-    
+
+  card_title: {
+    fontSize: 16,
+    //fontWeight: 'bold',
+    fontWeight: 'italic', 
   }
 
 
