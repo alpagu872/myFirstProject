@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, TouchableOpacity } from 'react-native';
+import { View, Text, TouchableOpacity ,Alert} from 'react-native';
 import styles from './Card.style';
 
 const Card = (props) => {
@@ -13,7 +13,9 @@ const Card = (props) => {
                     {props.quote}
                 </Text>
             </View>
-            <TouchableOpacity style={styles.button_container}>
+            <TouchableOpacity
+                style={styles.button_container}
+                onPress={() => Alert.alert(props.title+ ' iyi demiş...')}>
                 <Text style={styles.button_text}>Hİİİ</Text>
             </TouchableOpacity>
 
