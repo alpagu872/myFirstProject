@@ -13,7 +13,7 @@ function App() {
           <Text style={styles.card_title}>Eddard Stark</Text>
           <Text style = {styles.card_text}>Winter is coming...</Text>
           <TouchableOpacity style={styles.card_button_container}>
-            <Text style= {styles.card_text_color}>I LIKED</Text>
+            <Text style= {styles.card_button_text}>I LIKED</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -69,11 +69,10 @@ const styles = StyleSheet.create({
 
   }
   ,
-  card_text_color: {
+  card_button_text: {
     color: 'white',
-    
     borderColor: 'white',
-
+    fontweight: 'bold',
     fontSize: 18,
     
   }
