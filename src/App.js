@@ -9,7 +9,8 @@ function App() {
     <SafeAreaView style={styles.container}>
       
 
-    <Card/>
+    <Card title = "Eddard Stark" quote = "Önemli sözler"/>
+    <Card title = "Hasan " quote = "Falan"/>
 
 
     

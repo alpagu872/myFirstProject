@@ -2,12 +2,15 @@ import React from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 import styles from './Card.style';
 
-const Card = () => {
+const Card = (props) => {
     return (
         <View style={styles.container}>
             <View style={styles.body}>
+                <Text style={styles.title}>
+                    {props.title}
+                </Text>
                 <Text style={styles.text}>
-                    Hasan Hüseyin
+                    {props.quote}
                 </Text>
             </View>
             <TouchableOpacity style={styles.button_container}>
