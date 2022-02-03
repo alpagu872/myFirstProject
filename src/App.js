@@ -1,5 +1,5 @@
 import React from 'react';
-import { SafeAreaView, View, Text, StyleSheet, Button, TouchableOpacity } from 'react-native';
+import { SafeAreaView, View, Text, StyleSheet, ScrollView,Button, TouchableOpacity } from 'react-native';
 import Card from './components/Card'
 
 function App() {
@@ -7,19 +7,20 @@ function App() {
 
   return (
     <SafeAreaView style={styles.container}>
-
-
-      <Card
-        title="Eddard STARK"
-        quote="Önemli sözler" />
-      <Card
-        title="Hasan "
-        quote="Falan" />
-      <Card
-        title="Arif IŞIK"
-        quote="Evet, tarafından." />
-
-
+      <ScrollView>
+      <Card title="Falan" text="HAHAYT FALAN FİLAN İNTER MİLAN"/>
+      <Card title="Falan" text="HAHAYT FALAN FİLAN İNTER MİLAN"/>
+      <Card title="Falan" text="HAHAYT FALAN FİLAN İNTER MİLAN"/>
+      <Card title="Falan" text="HAHAYT FALAN FİLAN İNTER MİLAN"/>
+      <Card title="Falan" text="HAHAYT FALAN FİLAN İNTER MİLAN"/>
+      <Card title="Falan" text="HAHAYT FALAN FİLAN İNTER MİLAN"/>
+      <Card title="Falan" text="HAHAYT FALAN FİLAN İNTER MİLAN"/>
+      <Card title="Falan" text="HAHAYT FALAN FİLAN İNTER MİLAN"/>
+      <Card title="Falan" text="HAHAYT FALAN FİLAN İNTER MİLAN"/>
+      <Card title="Falan" text="HAHAYT FALAN FİLAN İNTER MİLAN"/>
+      
+      </ScrollView>
+      
     </SafeAreaView>
   )
 }
